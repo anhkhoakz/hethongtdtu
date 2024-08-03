@@ -114,6 +114,7 @@ categories.forEach((category) => {
         const link = document.createElement("a");
         link.href = item.link;
         link.textContent = item.name;
+        link.target = "_blank";
         categoryHTML.appendChild(link);
         categoryHTML.id = item.name.replace(/\s+/g, "_");
         return categoryHTML;
