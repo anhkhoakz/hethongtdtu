@@ -1,8 +1,11 @@
 const categories = [
-    { name: "Login", fontawesome: "fa-solid fa-right-to-bracket" },
+    {
+        name: "Login",
+        fontawesome: " fa-solid fa-passport",
+    },
     { name: "Education", fontawesome: "fa-solid fa-school" },
     {
-        name: "TDTU Learning Management System",
+        name: "Learning Management System",
         fontawesome: "fa-solid fa-laptop-file",
     },
     { name: "Student Affairs", fontawesome: "fa-solid fa-user-graduate" },
@@ -15,88 +18,93 @@ const categoryItems = {
         {
             name: "Student Portal",
             link: "https://old-stdportal.tdtu.edu.vn/",
+            fontawesome: "fa-solid fa-right-to-bracket",
         },
     ],
     Education: [
         {
             name: "Program Specification - Cumulative Plots",
             link: "https://learninginfo.tdtu.edu.vn/sv_xemctdt",
+            fontawesome: "fa-solid fa-share-nodes",
         },
-        {
-            name: "Planning for The Academic year",
-            link: "https://fileviewer.tdtu.edu.vn/home/file?url=itJ57zehCA3dsM2rwVNFuWDT3KdUi%2BzfgIHnAFWpG48qfUYOOFLzuOIDu2iVoR7woAkI1sPn8CShisGxpoL6wvOP3%2BF9bnh%2B%2BGT7rjsKDYsk%2B8C8GVLREvJ1fODRPTD1JRSs8B0xDbbY3TrZ0tUe5Q%3D%3D",
-        },
-        { name: "Registration For Subjects", link: "http://dkmh.tdt.edu.vn/" },
         {
             name: "Course Schedule",
             link: "https://lichhoc-lichthi.tdtu.edu.vn/tkb2.aspx",
+            fontawesome: "fa-solid fa-calendar-days",
         },
         {
             name: "Exam Date",
             link: "https://lichhoc-lichthi.tdtu.edu.vn/xemlichthi.aspx",
+            fontawesome: "fa-solid fa-magnet",
         },
-        {
-            name: "Exam Date MOS",
-            link: "https://old-stdportal.tdtu.edu.vn/main/lichthimos",
-        },
-        {
-            name: "Academic Results",
-            link: "https://old-stdportal.tdtu.edu.vn/main/ketquahocvu",
-        },
+
         {
             name: "Learning Outcomes",
             link: "https://ketquahoctap.tdtu.edu.vn/",
+            fontawesome: "fa-solid fa-star",
         },
-        { name: "Request support", link: "https://nopdon.tdtu.edu.vn/" },
     ],
-    "TDTU Learning Management System": [
+    "Learning Management System": [
         {
             name: "E-learning",
             link: "https://old-stdportal.tdtu.edu.vn/main/elearningv2",
+            fontawesome: "fa-solid fa-laptop-file",
         },
-        { name: "Graduation Internship", link: "https://tsnn.tdtu.edu.vn/" },
         {
-            name: "Thesis/Substitution alternative for graduation",
-            link: "https://tttn.tdtu.edu.vn/",
+            name: "E-learning IT",
+            link: "https://elit.tdtu.edu.vn/",
+            fontawesome: "fa-brands fa-gitlab",
         },
     ],
     "Student Affairs": [
         {
             name: "Results of Training Evaluation",
             link: "https://old-stdportal.tdtu.edu.vn/main/hoatdongphongtrao",
+            fontawesome: "fa-solid fa-trophy",
         },
-        {
-            name: "Scholarship",
-            link: "https://old-stdportal.tdtu.edu.vn/main/hocbong/thukhen",
-        },
-
         {
             name: "Registration for Student Certificate",
             link: "https://old-stdportal.tdtu.edu.vn/main/dangkychungnhansinhvien",
+            fontawesome: "fa-solid fa-certificate",
         },
         {
             name: "Results of Student Certificate",
             link: "https://old-stdportal.tdtu.edu.vn/main/ketquachungnhan",
+            fontawesome: "fa-solid fa-stamp",
         },
-
         {
             name: "Event Attendance",
             link: "https://old-stdportal.tdtu.edu.vn/main/diemdanh",
+            fontawesome: "fa-solid fa-clipboard-user",
         },
         {
             name: "Record participation in extracurricular activities",
             link: "https://old-stdportal.tdtu.edu.vn/main/ghinhanthamgiasukienngoaikhoa",
+            fontawesome: "fa-solid fa-leaf",
         },
     ],
     "Tuition Service Charge": [
-        { name: "Service account", link: "https://tkdv.tdtu.edu.vn/" },
-        { name: "Tuition", link: "https://hocphilephi.tdtu.edu.vn/" },
+        {
+            name: "Service account",
+            link: "https://tkdv.tdtu.edu.vn/",
+            fontawesome: "fa-solid fa-credit-card",
+        },
+        {
+            name: "Tuition",
+            link: "https://hocphilephi.tdtu.edu.vn/",
+            fontawesome: "fa-solid fa-money-bill-1",
+        },
     ],
     "Inspire Library": [
-        { name: "Reservea Room", link: "http://reservearoom-sv.tdtu.edu.vn/" },
+        {
+            name: "Reservea Room",
+            link: "http://reservearoom-sv.tdtu.edu.vn/",
+            fontawesome: "fa-solid fa-building",
+        },
         {
             name: "Document view statistics",
             link: "https://old-stdportal.tdtu.edu.vn/main/thongkexemtailieu",
+            fontawesome: "fa-solid fa-database",
         },
     ],
 };
@@ -113,7 +121,7 @@ categories.forEach((category) => {
         const categoryHTML = document.createElement("p");
         const link = document.createElement("a");
         link.href = item.link;
-        link.textContent = item.name;
+        link.innerHTML = `<i class="fas ${item.fontawesome}"></i> <span>${item.name}</span>`;
         link.target = "_blank";
         categoryHTML.appendChild(link);
         categoryHTML.id = item.name.replace(/\s+/g, "_");
