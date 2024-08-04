@@ -6,7 +6,7 @@ const categories = [
     { name: "Education", fontawesome: "fa-solid fa-school" },
     {
         name: "Learning Management System",
-        fontawesome: "fa-solid fa-laptop-file",
+        fontawesome: "fa-solid fa-bars-progress",
     },
     { name: "Student Affairs", fontawesome: "fa-solid fa-user-graduate" },
     { name: "Tuition Service Charge", fontawesome: "fa-solid fa-money-bill" },
