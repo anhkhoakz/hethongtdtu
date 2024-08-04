@@ -40,7 +40,7 @@ const mostUsedCategoryItems = {
     "Learning Management System": [
         {
             name: "E-learning",
-            link: "https://old-stdportal.tdtu.edu.vn/main/elearningv2",
+            link: "https://stdportal.tdtu.edu.vn/main/elearningv2",
             fontawesome: "fa-solid fa-laptop-file",
         },
         {
@@ -107,13 +107,13 @@ const categoryItems = {
         {
             name: "Learning Outcomes",
             link: "https://ketquahoctap.tdtu.edu.vn/",
-            fontawesome: "fa-solid fa-star",
+            fontawesome: "fa-solid fa-square-poll-horizontal",
         },
     ],
     "Learning Management System": [
         {
             name: "E-learning",
-            link: "https://old-stdportal.tdtu.edu.vn/main/elearningv2",
+            link: "https://stdportal.tdtu.edu.vn/main/elearningv2",
             fontawesome: "fa-solid fa-laptop-file",
         },
         {
