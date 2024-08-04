@@ -20,9 +20,6 @@ button {
     border-radius: 0.25em;
     padding: 0.25em 0.5em;
     cursor: pointer;
-}
-
-#change-view-button {
     float: right;
 }
 
