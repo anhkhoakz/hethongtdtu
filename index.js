@@ -176,10 +176,9 @@ const categoryItems = {
 };
 
 const categoriesHTML = document.querySelector("#categories");
-const selectElement = document.querySelector("select");
 
 function renderCategories(selectedOption) {
-    categoriesHTML.innerHTML = ""; // Clear previous content
+    categoriesHTML.innerHTML = "";
     const data =
         selectedOption === "essential-feature"
             ? mostUsedCategories
@@ -209,11 +208,15 @@ function renderCategories(selectedOption) {
     });
 }
 
-// Initial render with essential features
 renderCategories("essential-feature");
 
-// Event listener for dropdown changes
-selectElement.addEventListener("change", (event) => {
-    const selectedOption = event.target.value;
-    renderCategories(selectedOption);
+const changeViewButton = document.querySelector("#change-view-button");
+changeViewButton.addEventListener("click", () => {
+    if (changeViewButton.innerHTML === "Minimal") {
+        changeViewButton.innerHTML = "All";
+        renderCategories("all"); // Change to 'all' to show all categories
+    } else {
+        changeViewButton.innerHTML = "Minimal";
+        renderCategories("essential-feature");
+    }
 });

@@ -10,21 +10,31 @@ h2 {
     line-height: 1.2;
 }
 
-select {
+button {
     width: 100%;
-    min-width: 5ch;
-    max-width: 10ch;
+    min-width: 1em;
+    max-width: 5em;
+    font-size: 1em;
+    background-color: white;
     border: 1px solid black;
     border-radius: 0.25em;
     padding: 0.25em 0.5em;
-    font-size: 1em;
     cursor: pointer;
-    background-color: white;
+}
+
+#change-view-button {
+    float: right;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
 }
 
 a {
     color: black;
     text-decoration-color: #fccb06;
+    text-indent: 1em;
 }
 
 footer {
