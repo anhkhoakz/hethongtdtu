@@ -10,6 +10,18 @@ h2 {
     line-height: 1.2;
 }
 
+select {
+    width: 100%;
+    min-width: 5ch;
+    max-width: 10ch;
+    border: 1px solid black;
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: white;
+}
+
 a {
     color: #000000;
     text-decoration-color: #fccb06;
