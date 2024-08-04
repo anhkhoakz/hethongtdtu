@@ -9,8 +9,9 @@ h1 {
     text-align: center;
 }
 
-h1,
 h2 {
+    padding: 0.5em 0;
+    border-top: 1px solid black;
     line-height: 1.2;
 }
 
@@ -18,13 +19,16 @@ button {
     width: 100%;
     min-width: 1em;
     max-width: 5em;
-    font-size: 1em;
+    font-size: inherit;
     background-color: white;
     border: 1px solid black;
     border-radius: 0.25em;
     padding: 0.25em 0.5em;
     cursor: pointer;
-    float: right;
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
 }
 
 button:hover {
@@ -32,10 +36,18 @@ button:hover {
     color: white;
 }
 
+p {
+    text-indent: 1em;
+}
+
 a {
     color: black;
-    text-decoration-color: #fccb06;
-    text-indent: 1em;
+    text-decoration-color: #0077cc;
+}
+
+a:hover {
+    color: #0077cc;
+    text-decoration: none;
 }
 
 footer {
