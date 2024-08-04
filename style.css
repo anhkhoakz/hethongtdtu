@@ -5,6 +5,10 @@ body {
     padding: 0 0.62em 3.24em;
 }
 
+h1 {
+    text-align: center;
+}
+
 h1,
 h2 {
     line-height: 1.2;

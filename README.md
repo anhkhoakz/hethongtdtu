@@ -8,6 +8,12 @@ This personal webpage is only meant to be accessed conveniently for the [TDTU St
 
 [Hệ thống thông tin sinh viên TDTU](https://s.id/hethongtdtu)
 
+## What's make the differences?
+
+It loads **faster**. Naturally, all that's needed is native HTML, CSS, and JavaScript, along with Font Awesome for convenient view.
+
+It is **practical**. Just two views for the finest encounters. For everyday use, use the "Minimal" view; for nearly all functions you require access to, use the "All" option.
+
 ## Deployment Website
 
 [Hệ thống thông tin sinh viên TDTU](https://anhkhoakz.github.io/hethongtdtu/)
