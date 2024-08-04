@@ -34,7 +34,7 @@ const mostUsedCategoryItems = {
         {
             name: "Learning Outcomes",
             link: "https://ketquahoctap.tdtu.edu.vn/",
-            fontawesome: "fa-solid fa-star",
+            fontawesome: "fa-solid fa-square-poll-horizontal",
         },
     ],
     "Learning Management System": [
