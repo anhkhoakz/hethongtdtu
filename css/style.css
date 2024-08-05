@@ -1,5 +1,5 @@
 body {
-    font: 1.2em/1.62 sans-serif;
+    font: 1.2em/1.62 Georgia, sans-serif;
     margin: 1em auto;
     max-width: 40em;
     padding: 0 0.62em 3.24em;
@@ -29,6 +29,7 @@ button {
     margin-right: 0;
     display: flex;
     justify-content: center;
+    font: inherit;
 }
 
 button:hover {
