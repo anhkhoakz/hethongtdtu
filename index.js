@@ -190,14 +190,15 @@ function renderCategories(selectedOption) {
 
     data.forEach((category) => {
         const categoryHeader = document.createElement("h2");
-        categoryHeader.innerHTML = `<i class="fas ${category.fontawesome}"></i> <span>${category.name}</span>`;
+        categoryHeader.innerHTML = `<span>${category.name}</span>`;
+
         categoriesHTML.appendChild(categoryHeader);
 
         const categoryItemsHTML = items[category.name].map((item) => {
             const categoryHTML = document.createElement("p");
             const link = document.createElement("a");
             link.href = item.link;
-            link.innerHTML = `<i class="fas ${item.fontawesome}"></i> <span>${item.name}</span>`;
+            link.innerHTML = `<span>${item.name}</span>`;
             link.target = "_blank";
             categoryHTML.appendChild(link);
             categoryHTML.id = item.name.replace(/\s+/g, "_");
