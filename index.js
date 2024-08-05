@@ -1,15 +1,13 @@
 const mostUsedCategories = [
     {
         name: "Login",
-        fontawesome: "fa-solid fa-passport",
     },
-    { name: "Education", fontawesome: "fa-solid fa-school" },
+    { name: "Education" },
     {
         name: "Learning Management System",
-        fontawesome: "fa-solid fa-bars-progress",
     },
-    { name: "Student Affairs", fontawesome: "fa-solid fa-user-graduate" },
-    { name: "Inspire Library", fontawesome: "fa-solid fa-book-open-reader" },
+    { name: "Student Affairs" },
+    { name: "Inspire Library" },
 ];
 
 const mostUsedCategoryItems = {
@@ -17,50 +15,42 @@ const mostUsedCategoryItems = {
         {
             name: "Student Portal",
             link: "https://old-stdportal.tdtu.edu.vn/",
-            fontawesome: "fa-solid fa-right-to-bracket",
         },
     ],
     Education: [
         {
             name: "Program Specification - Cumulative Plots",
             link: "https://learninginfo.tdtu.edu.vn/sv_xemctdt",
-            fontawesome: "fa-solid fa-share-nodes",
         },
         {
             name: "Course Schedule",
             link: "https://lichhoc-lichthi.tdtu.edu.vn/tkb2.aspx",
-            fontawesome: "fa-solid fa-calendar-days",
         },
         {
             name: "Learning Outcomes",
             link: "https://ketquahoctap.tdtu.edu.vn/",
-            fontawesome: "fa-solid fa-square-poll-horizontal",
         },
     ],
     "Learning Management System": [
         {
             name: "E-learning",
             link: "https://stdportal.tdtu.edu.vn/main/elearningv2",
-            fontawesome: "fa-solid fa-laptop-file",
         },
         {
             name: "E-learning IT",
             link: "https://elit.tdtu.edu.vn/",
-            fontawesome: "fa-brands fa-gitlab",
         },
     ],
     "Student Affairs": [
         {
             name: "Results of Training Evaluation",
             link: "https://old-stdportal.tdtu.edu.vn/main/hoatdongphongtrao",
-            fontawesome: "fa-solid fa-trophy",
         },
     ],
     "Inspire Library": [
         {
             name: "Reserve a Room",
             link: "http://reservearoom-sv.tdtu.edu.vn/",
-            fontawesome: "fa-solid fa-building",
         },
     ],
 };
@@ -68,16 +58,14 @@ const mostUsedCategoryItems = {
 const categories = [
     {
         name: "Login",
-        fontawesome: "fa-solid fa-passport",
     },
-    { name: "Education", fontawesome: "fa-solid fa-school" },
+    { name: "Education" },
     {
         name: "Learning Management System",
-        fontawesome: "fa-solid fa-bars-progress",
     },
-    { name: "Student Affairs", fontawesome: "fa-solid fa-user-graduate" },
-    { name: "Tuition Service Charge", fontawesome: "fa-solid fa-money-bill" },
-    { name: "Inspire Library", fontawesome: "fa-solid fa-book-open-reader" },
+    { name: "Student Affairs" },
+    { name: "Tuition Service Charge" },
+    { name: "Inspire Library" },
 ];
 
 const categoryItems = {
@@ -85,92 +73,76 @@ const categoryItems = {
         {
             name: "Student Portal",
             link: "https://old-stdportal.tdtu.edu.vn/",
-            fontawesome: "fa-solid fa-right-to-bracket",
         },
     ],
     Education: [
         {
             name: "Program Specification - Cumulative Plots",
             link: "https://learninginfo.tdtu.edu.vn/sv_xemctdt",
-            fontawesome: "fa-solid fa-share-nodes",
         },
         {
             name: "Course Schedule",
             link: "https://lichhoc-lichthi.tdtu.edu.vn/tkb2.aspx",
-            fontawesome: "fa-solid fa-calendar-days",
         },
         {
             name: "Exam Date",
             link: "https://lichhoc-lichthi.tdtu.edu.vn/xemlichthi.aspx",
-            fontawesome: "fa-solid fa-magnet",
         },
         {
             name: "Learning Outcomes",
             link: "https://ketquahoctap.tdtu.edu.vn/",
-            fontawesome: "fa-solid fa-square-poll-horizontal",
         },
     ],
     "Learning Management System": [
         {
             name: "E-learning",
             link: "https://stdportal.tdtu.edu.vn/main/elearningv2",
-            fontawesome: "fa-solid fa-laptop-file",
         },
         {
             name: "E-learning IT",
             link: "https://elit.tdtu.edu.vn/",
-            fontawesome: "fa-brands fa-gitlab",
         },
     ],
     "Student Affairs": [
         {
             name: "Results of Training Evaluation",
             link: "https://old-stdportal.tdtu.edu.vn/main/hoatdongphongtrao",
-            fontawesome: "fa-solid fa-trophy",
         },
         {
             name: "Registration for Student Certificate",
             link: "https://old-stdportal.tdtu.edu.vn/main/dangkychungnhansinhvien",
-            fontawesome: "fa-solid fa-certificate",
         },
         {
             name: "Results of Student Certificate",
             link: "https://old-stdportal.tdtu.edu.vn/main/ketquachungnhan",
-            fontawesome: "fa-solid fa-stamp",
         },
         {
             name: "Event Attendance",
             link: "https://old-stdportal.tdtu.edu.vn/main/diemdanh",
-            fontawesome: "fa-solid fa-clipboard-user",
         },
         {
             name: "Record participation in extracurricular activities",
             link: "https://old-stdportal.tdtu.edu.vn/main/ghinhanthamgiasukienngoaikhoa",
-            fontawesome: "fa-solid fa-leaf",
         },
     ],
     "Tuition Service Charge": [
         {
             name: "Service account",
             link: "https://tkdv.tdtu.edu.vn/",
-            fontawesome: "fa-solid fa-credit-card",
         },
         {
             name: "Tuition",
             link: "https://hocphilephi.tdtu.edu.vn/",
-            fontawesome: "fa-solid fa-money-bill-1",
         },
     ],
     "Inspire Library": [
         {
             name: "Reserve a Room",
             link: "http://reservearoom-sv.tdtu.edu.vn/",
-            fontawesome: "fa-solid fa-building",
         },
         {
             name: "Document view statistics",
             link: "https://old-stdportal.tdtu.edu.vn/main/thongkexemtailieu",
-            fontawesome: "fa-solid fa-database",
         },
     ],
 };
