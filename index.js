@@ -214,7 +214,7 @@ const changeViewButton = document.querySelector("#change-view-button");
 changeViewButton.addEventListener("click", () => {
     if (changeViewButton.innerHTML === "Minimal") {
         changeViewButton.innerHTML = "All";
-        renderCategories("all"); // Change to 'all' to show all categories
+        renderCategories("all");
     } else {
         changeViewButton.innerHTML = "Minimal";
         renderCategories("essential-feature");
