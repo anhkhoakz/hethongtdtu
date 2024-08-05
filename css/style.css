@@ -11,7 +11,7 @@ h1 {
 
 h2 {
     padding-top: 0.5em;
-    border-top: 1px solid black;
+    border-top: 0.05em solid black;
     line-height: 1.2;
 }
 
@@ -21,7 +21,7 @@ button {
     max-width: 5em;
     font-size: inherit;
     background-color: white;
-    border: 1px solid black;
+    border: 0.05em solid black;
     border-radius: 0.25em;
     padding: 0.25em 0.5em;
     cursor: pointer;
@@ -48,7 +48,7 @@ a {
 
 a:hover {
     color: #0077cc;
-    text-decoration: none;
+    text-decoration-thickness: 0.1em;
 }
 
 footer {
@@ -56,5 +56,5 @@ footer {
     width: 100%;
     text-align: center;
     padding: 0.5em 0;
-    border-top: 1px solid black;
+    border-top: 0.05em solid black;
 }
