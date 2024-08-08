@@ -162,7 +162,12 @@ function renderCategories(selectedOption) {
 
     data.forEach((category) => {
         const categoryHeader = document.createElement("h2");
-        categoryHeader.innerHTML = `<span>${category.name}</span>`;
+        const categoryLink = document.createElement("a");
+        const categoryId = category.name.replace(/\s+/g, "_");
+        categoryHeader.id = categoryId;
+        categoryLink.href = `#${categoryId}`;
+        categoryLink.innerHTML = category.name;
+        categoryHeader.appendChild(categoryLink);
 
         categoriesHTML.appendChild(categoryHeader);
 
