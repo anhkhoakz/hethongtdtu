@@ -119,23 +119,12 @@ function renderCategories(selectedOption) {
         if (items[categoryName].length === 0) return;
 
         const categoryHeader = document.createElement("h2");
-<<<<<<< HEAD:main.js
         const categoryLink = document.createElement("a");
         const categoryId = categoryName.replace(/\s+/g, "_");
         categoryHeader.id = categoryId;
         categoryLink.href = `#${categoryId}`;
         categoryLink.innerHTML = `<i class="fas ${items[categoryName][0].fontawesome}"></i> <span>${categoryName}</span>`;
         categoryHeader.appendChild(categoryLink);
-||||||| a217df9:index.js
-        categoryHeader.innerHTML = `<span>${category.name}</span>`;
-=======
-        const categoryLink = document.createElement("a");
-        const categoryId = category.name.replace(/\s+/g, "_");
-        categoryHeader.id = categoryId;
-        categoryLink.href = `#${categoryId}`;
-        categoryLink.innerHTML = category.name;
-        categoryHeader.appendChild(categoryLink);
->>>>>>> refs/remotes/origin/main:index.js
 
         categoriesHTML.appendChild(categoryHeader);
 
