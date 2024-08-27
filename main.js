@@ -21,6 +21,12 @@ const categoryItems = {
             mostUsed: true,
         },
         {
+            name: "Agenda",
+            link: "TKB.JPG",
+            fontawesome: "fa-solid fa-calendar-days",
+            mostUsed: true,
+        },
+        {
             name: "Exam Date",
             link: "https://lichhoc-lichthi.tdtu.edu.vn/xemlichthi.aspx",
             fontawesome: "fa-solid fa-magnet",
