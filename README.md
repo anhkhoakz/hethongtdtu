@@ -20,4 +20,4 @@ It is **practical**. Just two views for the finest encounters. For everyday use,
 
 ## License
 
-[GNU GENERAL PUBLIC LICENSE](LICENSE)
+[GNU AFFERO GENERAL PUBLIC LICENSE](LICENSE)
