@@ -1,23 +1,31 @@
 # TDTU Student Portal
 
-This personal webpage is only meant to be accessed conveniently for the [TDTU Student Portal](https://stdportal.tdtu.edu.vn/).
+A fast, minimal, and practical web portal for convenient access to the TDTU Student Portal and related services.
 
-## Inpspired
+## Features
 
-[Best Motherfucking Website](https://bestmotherfucking.website/)
+- **Lightning fast**: Pure HTML and CSS, no frameworks or build tools.
+- **Minimalist design**: Clean, modern, and distraction-free interface.
+- **Mobile-friendly**: Fully responsive and works on all devices.
+- **Direct links**: Quickly access all essential TDTU student resources.
+- **Section anchors**: Jump to any section using URL fragments (e.g., `#education`, `#login`).
 
-[Hệ thống thông tin sinh viên TDTU](https://s.id/hethongtdtu)
+## Inspired by
 
-## What's make the differences?
+- [Best Motherfucking Website](https://bestmotherfucking.website/)
+- [Hệ thống thông tin sinh viên TDTU](https://s.id/hethongtdtu)
 
-It loads **faster**. Naturally, all that's needed is native HTML, CSS, and JavaScript, along with Font Awesome for convenient view.
+## Usage
 
-It is **practical**. Just two views for the finest encounters. For everyday use, use the "Minimal" view; for nearly all functions you require access to, use the "All" option.
+Just open [the deployment site](https://anhkhoakz.github.io/hethongtdtu/) in your browser. Use URL fragments to jump to sections, e.g.:
 
-## Deployment Website
-
-[Hệ thống thông tin sinh viên TDTU](https://anhkhoakz.github.io/hethongtdtu/)
+- `/#login`
+- `/#education`
+- `/#learning-management-system`
+- `/#student-affairs`
+- `/#tuition-service-charge`
+- `/#inspire-library`
 
 ## License
 
-[GNU AFFERO GENERAL PUBLIC LICENSE](LICENSE)
+[GNU Affero General Public License](LICENSE)
