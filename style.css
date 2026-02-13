@@ -9,9 +9,19 @@
 	--radius: 0.75em;
 }
 
+[data-theme="dark"] {
+	--primary: #4a9eff;
+	--primary-dark: #80c0ff;
+	--bg: #1a1a1a;
+	--text: #e4e4e4;
+	--section-bg: #2a2a2a;
+	--border: #404040;
+}
+
 html {
 	scroll-behavior: smooth;
 	color: var(--text);
+	background: var(--bg);
 }
 
 body {
@@ -22,6 +32,7 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
@@ -29,12 +40,57 @@ header {
 	text-align: center;
 	background: var(--section-bg);
 	border-bottom: 1px solid var(--border);
+	transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 header h1 {
 	margin: 0;
 	font-size: 2em;
 	letter-spacing: 0.01em;
+}
+
+header p {
+	margin: 0.5em 0 0 0;
+	font-size: 0.9em;
+	color: var(--text);
+	opacity: 0.8;
+}
+
+nav {
+	background: var(--section-bg);
+	border-bottom: 1px solid var(--border);
+	padding: 0.5em 0;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.5em 1em;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 1em;
+}
+
+nav li {
+	margin: 0;
+}
+
+nav a {
+	padding: 0.3em 0.6em;
+	border-radius: 0.3em;
+	font-size: 0.85em;
+	display: inline-block;
+}
+
+nav a:hover,
+nav a:focus-visible {
+	background: var(--border);
+	border-bottom: 1px solid transparent;
 }
 
 main {
@@ -54,6 +110,11 @@ section {
 	border: 1px solid var(--border);
 	padding: 1.5em 1.2em 1.2em 1.2em;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+	transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-theme="dark"] section {
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 section h2 {
@@ -104,6 +165,8 @@ footer {
 	text-align: center;
 	padding: 1.2em 0 1.5em 0;
 	font-size: 1em;
+	position: relative;
+	transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 footer a {
@@ -118,6 +181,35 @@ footer a:hover {
 	outline: none;
 }
 
+#theme-toggle {
+	position: absolute;
+	right: 1em;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: 2px solid var(--border);
+	border-radius: 50%;
+	width: 2.5em;
+	height: 2.5em;
+	font-size: 1em;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
+}
+
+#theme-toggle:hover,
+#theme-toggle:focus-visible {
+	border-color: var(--primary);
+	transform: translateY(-50%) scale(1.1);
+	outline: none;
+}
+
+#theme-toggle:active {
+	transform: translateY(-50%) scale(0.95);
+}
+
 @media (max-width: 700px) {
 	main {
 		padding: 1em 0.2em 0.5em 0.2em;
@@ -129,5 +221,22 @@ footer a:hover {
 	}
 	header h1 {
 		font-size: 1.2em;
+	}
+	header p {
+		font-size: 0.8em;
+	}
+	nav ul {
+		gap: 0.3em 0.5em;
+		padding: 0 0.5em;
+	}
+	nav a {
+		font-size: 0.75em;
+		padding: 0.2em 0.4em;
+	}
+	#theme-toggle {
+		right: 0.5em;
+		width: 2em;
+		height: 2em;
+		font-size: 0.9em;
 	}
 }

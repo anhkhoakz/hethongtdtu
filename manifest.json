@@ -1,0 +1,20 @@
+{
+  "name": "TDTU Student Portal",
+  "short_name": "TDTU Portal",
+  "description": "Lightweight and fast web portal for TDTU students",
+  "start_url": "/hethongtdtu/",
+  "display": "standalone",
+  "background_color": "#efecec",
+  "theme_color": "#0c2d57",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "favicon.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "lang": "en-US"
+}
