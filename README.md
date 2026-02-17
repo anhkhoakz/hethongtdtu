@@ -18,23 +18,27 @@ A fast, minimal, and practical web portal for convenient access to the TDTU Stud
 ## New in This Version
 
 ### Dark Mode Support
+
 - Automatically detects system dark mode preference
 - Manual toggle button in the footer
 - Smooth transitions between themes
 - Preference saved in localStorage
 
 ### PWA Support
+
 - Installable on mobile devices
 - Works offline after first visit
 - App-like experience with manifest.json
 
 ### Enhanced Accessibility
+
 - Proper ARIA roles and labels
 - Improved semantic HTML structure
 - Better keyboard navigation
 - Sticky navigation menu
 
 ### SEO & Social Sharing
+
 - Open Graph meta tags for Facebook
 - Twitter Card support
 - Enhanced meta descriptions and keywords
@@ -58,6 +62,7 @@ Just open [the deployment site](https://anhkhoakz.github.io/hethongtdtu/) in you
 ### Installing as PWA
 
 On mobile devices:
+
 1. Open the site in your browser
 2. Tap the "Add to Home Screen" option
 3. The portal will be installed as an app icon
